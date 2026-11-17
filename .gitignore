@@ -1,0 +1,27 @@
+# Salida generada: se regenera con generate_calendars.py en segundos
+calendarios_pdf/
+*.pdf
+
+# Fotos: NUNCA en git (577 MB de TIFF al año; los JPEG tampoco ahorran nada).
+# Viven en ~/fotos y ~/Pictures; aquí solo se versiona pics/<año>/manifest.txt.
+pics/**/*.jpg
+pics/**/*.jpeg
+pics/**/*.JPG
+pics/**/*.png
+pics/**/*.tif
+pics/**/*.tiff
+pics/**/*.TIF
+pics/**/*.TIFF
+pics/**/*.arw
+pics/**/*.ARW
+pics/**/*.dng
+pics/**/*.DNG
+pics/**/*.heic
+pics/**/.dtrash/
+
+# Sidecars de darktable: no hacen falta, los JPEG ya están revelados
+*.xmp
+
+# Python
+__pycache__/
+*.py[cod]
