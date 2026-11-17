@@ -25,3 +25,6 @@ pics/**/.dtrash/
 # Python
 __pycache__/
 *.py[cod]
+
+# Montajes de selección de fotos (se regeneran)
+/seleccion_*.jpg

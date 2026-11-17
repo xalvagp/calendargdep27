@@ -1,23 +1,24 @@
 # Calendario 2027 — asignación de fotos
 
-Una foto por mes. El fichero debe llamarse igual que el mes (sin acentos) y ser
-JPEG o TIFF RGB sin comprimir. Aquí solo se anota qué foto toca cada mes: las
-imágenes y los PDFs no se versionan (ver `.gitignore`).
+Una foto por mes, elegida en Immich de entre las tomadas en el mismo mes de 2026
+(la de diciembre es de diciembre de 2025: aún no hay fotos de diciembre de 2026).
+Los ficheros van en `pics/2027/` con el nombre del mes, sin acentos, en JPEG.
+Las imágenes y los PDFs no se versionan (ver `.gitignore`).
 
-| Mes        | Fichero       | Notas                                  |
-|------------|---------------|----------------------------------------|
-| Enero      | Enero.tif     | de momento, copia de pics/2026         |
-| Febrero    | Febrero.tif   | de momento, copia de pics/2026         |
-| Marzo      | Marzo.tif     | de momento, copia de pics/2026         |
-| Abril      | Abril.tif     | de momento, copia de pics/2026         |
-| Mayo       | Mayo.tif      | de momento, copia de pics/2026         |
-| Junio      | Junio.tif     | de momento, copia de pics/2026         |
-| Julio      | Julio.tif     | de momento, copia de pics/2026         |
-| Agosto     | Agosto.tif    | de momento, copia de pics/2026         |
-| Septiembre | Septiembre.tif| de momento, copia de pics/2026         |
-| Octubre    | Octubre.tif   | de momento, copia de pics/2026         |
-| Noviembre  | Noviembre.tif | de momento, copia de pics/2026         |
-| Diciembre  | Diciembre.tif | de momento, copia de pics/2026         |
+| Mes        | Fecha foto | Original                     | Notas                                  |
+|------------|------------|------------------------------|----------------------------------------|
+| Enero      | 2026-01-31 | 20260131_104034_7AF5CE83.jpg | ciclistas en la calle                  |
+| Febrero    | 2026-02-07 | 20260207_183452_8633C912.jpg | cumpleaños 60, cuatro mujeres          |
+| Marzo      | 2026-03-29 | _25_0011_1.ARW               | arroyo entre rocas; revelado darktable |
+| Abril      | 2026-04-03 | _25_0024_1.ARW               | acantilado y cala; revelado darktable  |
+| Mayo       | 2026-05-22 | 20260522_100933.JPG          | BMW amarilla                           |
+| Junio      | 2026-06-09 | 20260609_204923.JPG          | comida familiar en el jardín           |
+| Julio      | 2026-07-01 | 20260701_200413.JPG          | concierto al aire libre                |
+| Agosto     | 2026-08-20 | 20260820_122243.JPG          | pasarela de madera, playa              |
+| Septiembre | 2026-09-26 | 20260926_140728.JPG          | terraza con palmeras                   |
+| Octubre    | 2026-10-25 | 20261025_131948.JPG          | ciclista en el mirador                 |
+| Noviembre  | 2026-11-01 | 20261101_103402.JPG          | sobremesa en la terraza, montañas      |
+| Diciembre  | 2025-12-18 | 20251218_141059_7767C59E.jpg | grupo al atardecer, embalse (dic-2025) |
 
-Al sustituir una foto: cambia el fichero en `pics/2027/`, actualiza la fila
-correspondiente (origen real: fecha o nombre en `~/fotos`) y regenera.
+Al sustituir una foto: cambia el fichero en `pics/2027/`, actualiza su fila y regenera
+con `python3 generate_calendars.py 2027` (y `--combined` para el PDF de 12 páginas).
